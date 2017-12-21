@@ -15,11 +15,6 @@ namespace TestMultiplica.Services.Controllers
     public class CategoriesController : ApiController
     {
         private readonly IGetCategoriesQuery _IGetCategoriesQuery;
-
-        public CategoriesController()
-        {
-
-        }
         public CategoriesController(IGetCategoriesQuery IGetCategoriesQuery)
         {
             _IGetCategoriesQuery = IGetCategoriesQuery;
