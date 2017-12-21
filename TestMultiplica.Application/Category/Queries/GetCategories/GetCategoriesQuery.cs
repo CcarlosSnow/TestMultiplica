@@ -14,14 +14,14 @@ namespace TestMultiplica.Application.Category.Queries.GetCategories
 
         public GetCategoriesQuery()
         {
+
         }
         public List<GetCategoriesModel> Execute()
         {
             using (_Entities = new TestMultiplicaEntities())
             {
                 var categories = _Entities.Category.ToList();
-                //AutoMapper.Mapper.Map()
-                var resultCategories = Mapper.Map<List<Data.Category>, List<GetCategoriesModel>>(categories);
+                var resultCategories = Mapper.Map<List<GetCategoriesModel>>(categories);
                 return resultCategories;
             }
         }

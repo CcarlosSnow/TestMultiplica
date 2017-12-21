@@ -54,16 +54,29 @@
     <Compile Include="Category\Queries\GetCategories\GetCategoriesModel.cs" />
     <Compile Include="Category\Queries\GetCategories\GetCategoriesQuery.cs" />
     <Compile Include="Category\Queries\GetCategories\IGetCategoriesQuery.cs" />
+    <Compile Include="Infraestructure\ApplicationProfile.cs" />
+    <Compile Include="Product\Commands\CreateProduct\CreateProductCommand.cs" />
+    <Compile Include="Product\Commands\CreateProduct\CreateProductCommandModel.cs" />
+    <Compile Include="Product\Commands\CreateProduct\CreateProductModel.cs" />
+    <Compile Include="Product\Commands\CreateProduct\ICreateProductCommand.cs" />
+    <Compile Include="Product\Commands\DeleteProduct\DeleteProductCommand.cs" />
+    <Compile Include="Product\Commands\DeleteProduct\DeleteProductModel.cs" />
+    <Compile Include="Product\Commands\DeleteProduct\IDeleteProductCommand.cs" />
+    <Compile Include="Product\Commands\UpdateProduct\IUpdateProductCommand.cs" />
+    <Compile Include="Product\Commands\UpdateProduct\UpdateProductCommand.cs" />
+    <Compile Include="Product\Commands\UpdateProduct\UpdateProductCommandModel.cs" />
+    <Compile Include="Product\Commands\UpdateProduct\UpdateProductModel.cs" />
+    <Compile Include="Product\Queries\GetProductByID\GetProductByIDModel.cs" />
+    <Compile Include="Product\Queries\GetProductByID\GetProductByIDQuery.cs" />
+    <Compile Include="Product\Queries\GetProductByID\IGetProductByIDQuery.cs" />
+    <Compile Include="Product\Queries\GetProducts\GetProductsQuery.cs" />
+    <Compile Include="Product\Queries\GetProducts\GetProductsModel.cs" />
+    <Compile Include="Product\Queries\GetProducts\IGetProductsQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Category\Commands\" />
-    <Folder Include="Product\Commands\CreateProduct\" />
-    <Folder Include="Product\Commands\DeleteProduct\" />
-    <Folder Include="Product\Commands\UpdateProduct\" />
     <Folder Include="Product\Queries\FindProducts\" />
-    <Folder Include="Product\Queries\GetProductByID\" />
-    <Folder Include="Product\Queries\GetProducts\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TestMultiplica.Data\TestMultiplica.Data.csproj">
