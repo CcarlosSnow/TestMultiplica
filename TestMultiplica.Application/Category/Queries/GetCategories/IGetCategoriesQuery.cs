@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace TestMultiplica.Application.Category.Queries.GetCategories
 {
-    interface IGetCategoriesQuery
+    public interface IGetCategoriesQuery
     {
-        IEnumerable<GetCategoriesModel> Execute();
+        List<GetCategoriesModel> Execute();
     }
 }
