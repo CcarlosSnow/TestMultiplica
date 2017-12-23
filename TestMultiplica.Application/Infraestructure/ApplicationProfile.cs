@@ -9,6 +9,8 @@ using TestMultiplica.Application.Product.Queries.GetProductByID;
 using TestMultiplica.Application.Product.Commands.CreateProduct;
 using TestMultiplica.Application.Product.Commands.UpdateProduct;
 using TestMultiplica.Application.Product.Commands.DeleteProduct;
+using TestMultiplica.Application.Product.XML.Commands.CreateProduct;
+using TestMultiplica.Application.Product.XML.Commands.UpdateProduct;
 
 namespace TestMultiplica.Application.Infraestructure
 {
@@ -32,7 +34,8 @@ namespace TestMultiplica.Application.Infraestructure
                 .ForMember(dest => dest.ID, opt => opt.Ignore());
 
             CreateMap<Data.Product, DeleteProductModel>();
-
+            CreateMap<CreateProductXMLCommandModel, CreateProductXMLModel>();
+            CreateMap<UpdateProductXMLCommandModel, UpdateProductXMLModel>();
         }
     }
 }

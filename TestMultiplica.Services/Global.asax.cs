@@ -7,14 +7,16 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using TestMultiplica.Application.Category.Queries.GetCategories;
-using TestMultiplica.Application.Product.Queries.GetProducts;
 using TestMultiplica.Application.Infraestructure;
+using TestMultiplica.Util;
+using Ninject;
+using TestMultiplica.Web.App_Start;
 
 namespace TestMultiplica.Services
 {
     public class WebApiApplication : System.Web.HttpApplication
     {
+
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
@@ -27,6 +29,9 @@ namespace TestMultiplica.Services
             {
                 cfg.AddProfile(new ApplicationProfile());
             });
+
+            var Util = NinjectWebCommon.Kernel.Get<IUtil>();
+            Util.GenerateXMLSeed();
         }
     }
 }

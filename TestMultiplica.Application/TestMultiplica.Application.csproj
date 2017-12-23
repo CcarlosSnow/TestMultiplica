@@ -54,6 +54,12 @@
     <Compile Include="Category\Queries\GetCategories\GetCategoriesModel.cs" />
     <Compile Include="Category\Queries\GetCategories\GetCategoriesQuery.cs" />
     <Compile Include="Category\Queries\GetCategories\IGetCategoriesQuery.cs" />
+    <Compile Include="Category\XML\Queries\GetCategories\GetCategoriesXMLModel.cs" />
+    <Compile Include="Category\XML\Queries\GetCategories\GetCategoriesXMLQuery.cs" />
+    <Compile Include="Category\XML\Queries\GetCategories\IGetCategoriesXMLQuery.cs" />
+    <Compile Include="Category\XML\Queries\GetCategoryByID\GetCategoryByIDXMLModel.cs" />
+    <Compile Include="Category\XML\Queries\GetCategoryByID\GetCategoryByIDXMLQuery.cs" />
+    <Compile Include="Category\XML\Queries\GetCategoryByID\IGetCategoryByIDXMLQuery.cs" />
     <Compile Include="Infraestructure\ApplicationProfile.cs" />
     <Compile Include="Product\Commands\CreateProduct\CreateProductCommand.cs" />
     <Compile Include="Product\Commands\CreateProduct\CreateProductCommandModel.cs" />
@@ -72,16 +78,36 @@
     <Compile Include="Product\Queries\GetProducts\GetProductsQuery.cs" />
     <Compile Include="Product\Queries\GetProducts\GetProductsModel.cs" />
     <Compile Include="Product\Queries\GetProducts\IGetProductsQuery.cs" />
+    <Compile Include="Product\XML\Commands\CreateProduct\CreateProductXMLCommand.cs" />
+    <Compile Include="Product\XML\Commands\CreateProduct\CreateProductXMLCommandModel.cs" />
+    <Compile Include="Product\XML\Commands\CreateProduct\CreateProductXMLModel.cs" />
+    <Compile Include="Product\XML\Commands\CreateProduct\ICreateProductXMLCommand.cs" />
+    <Compile Include="Product\XML\Commands\DeleteProduct\DeleteProductXMLCommand.cs" />
+    <Compile Include="Product\XML\Commands\DeleteProduct\DeleteProductXMLModel.cs" />
+    <Compile Include="Product\XML\Commands\DeleteProduct\IDeleteProductXMLCommand.cs" />
+    <Compile Include="Product\XML\Commands\UpdateProduct\IUpdateProductXMLCommand.cs" />
+    <Compile Include="Product\XML\Commands\UpdateProduct\UpdateProductXMLCommandModel.cs" />
+    <Compile Include="Product\XML\Commands\UpdateProduct\UpdateProductXMLCommand.cs" />
+    <Compile Include="Product\XML\Commands\UpdateProduct\UpdateProductXMLModel.cs" />
+    <Compile Include="Product\XML\Queries\GetProductByID\GetProductByIDXMLModel.cs" />
+    <Compile Include="Product\XML\Queries\GetProductByID\GetProductByIDXMLQuery.cs" />
+    <Compile Include="Product\XML\Queries\GetProductByID\IGetProductByIDXMLQuery.cs" />
+    <Compile Include="Product\XML\Queries\GetProducts\GetProductsXMLModel.cs" />
+    <Compile Include="Product\XML\Queries\GetProducts\GetProductsXMLQuery.cs" />
+    <Compile Include="Product\XML\Queries\GetProducts\IGetProductsXMLQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Category\Commands\" />
     <Folder Include="Product\Queries\FindProducts\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TestMultiplica.Data\TestMultiplica.Data.csproj">
       <Project>{68638d96-c786-4f48-a1a4-6d5db98dcc94}</Project>
       <Name>TestMultiplica.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestMultiplica.Util\TestMultiplica.Util.csproj">
+      <Project>{1090b5ff-a887-4a36-960b-37a19486658c}</Project>
+      <Name>TestMultiplica.Util</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
